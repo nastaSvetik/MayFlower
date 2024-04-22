@@ -1,6 +1,8 @@
 target/
 /src/main/resources/config.test.properties
 config.xlaunch
+/.allure
+/.idea
 
 
 ### IntelliJ IDEA ###
