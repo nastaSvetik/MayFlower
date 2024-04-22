@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JIRA-123. [Statistics] Event's metrics in report" parallel="false">
+    <test name="Check event's metrics">
+        <classes>
+            <class name="frontend.web.MetricsInStatisticsTest"/>
+        </classes>
+    </test>
+</suite>
