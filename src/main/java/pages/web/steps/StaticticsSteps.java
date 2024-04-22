@@ -1,6 +1,7 @@
 package pages.web.steps;
 
 import framework.DriverFactory;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -11,8 +12,8 @@ import java.time.Duration;
 import java.util.Objects;
 
 public class StaticticsSteps {
-    private static final WebDriver driver = DriverFactory.getDriver();
 
+    @Step("Run Report and Get value")
     public static String runReportAndGetFirstRowValueWaitStep(StatisticsPage page, String expectedText) {
         final String[] actualText = new String[1];
         new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(100))

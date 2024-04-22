@@ -5,7 +5,7 @@ FROM maven:3-openjdk-17-slim
 RUN apt-get update && apt-get install -y \
     wget \
     unzip\
-    gnupg \
+    gnupg
 
 # Set the working directory
 WORKDIR /app
