@@ -20,12 +20,12 @@ RUN mvn dependency:go-offline
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
     && apt-get update && apt-get install -y google-chrome-stable \
-    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/lib/apt/lists/*
 
 # Download appropriate chrome-driver
 RUN wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.122/linux64/chromedriver-linux64.zip -O /tmp/chromedriver.zip \
     && unzip /tmp/chromedriver.zip -d /app/ \
-    && rm /tmp/chromedriver.zip \
+    && rm /tmp/chromedriver.zip
 
 # Set path to chrome-driver
 ENV pathToChromeDriver=/app/chromedriver-linux64/chromedriver
