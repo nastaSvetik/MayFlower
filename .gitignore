@@ -1,10 +1,10 @@
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+/src/main/resources/config.test.properties
+config.xlaunch
+
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
+.idea/*
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
