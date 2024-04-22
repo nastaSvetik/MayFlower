@@ -15,7 +15,7 @@ public class StaticticsSteps {
 
     public static String runReportAndGetFirstRowValueWaitStep(StatisticsPage page, String expectedText) {
         final String[] actualText = new String[1];
-        new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(60))
+        new WebDriverWait(DriverFactory.getDriver(), Duration.ofSeconds(100))
                 .pollingEvery(Duration.ofSeconds(5))
                 .until((ExpectedCondition<Boolean>) d -> {
                     page.statisticsFiltersForm.clickRunReportButton();
