@@ -45,8 +45,8 @@ public class DriverFactory {
     }
 
     public static void closeDriver() {
-//    if (Objects.nonNull(driver)){
-//        driver.quit();
-//      }
+        if (Objects.nonNull(driver)) {
+            driver.quit();
+        }
     }
 }
