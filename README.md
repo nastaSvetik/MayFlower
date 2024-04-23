@@ -20,7 +20,7 @@ docker pull nastasvetik/test-project:latest
 To run the Docker image, execute:
 
 ```bash
-docker run -it -p 8003:8003 -e "baseUserLogin=LOGIN"  -e "baseUserPassword=PASSWORD"  --name CONTAINER_NAME nastasvetik/test-project:latest
+docker run -it -p 8003:8003 --shm-size=3g --net=host --env="DISPLAY" -e "baseUserLogin=LOGIN"  -e "baseUserPassword=PASSWORD"  --name CONTAINER_NAME nastasvetik/test-project:latest
 ```
 On container start the tests will run.
 After tests run the Allure report will be generated and Allure server started.
