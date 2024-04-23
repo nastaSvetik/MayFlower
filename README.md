@@ -17,6 +17,13 @@ docker pull nastasvetik/test-project:latest
 ```
 
 ## Running the Docker Image
+Consists of:
+- Jdk
+- Maven
+- Google-chrome 
+- ChromeDriver
+- Allure report
+
 To run the Docker image, execute:
 
 ```bash
